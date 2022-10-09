@@ -18,6 +18,10 @@ public class Personaje {
 
     private String genero;
 
+    @Column(name = "id_ubicacion")
+    private int idUbicacion;
+
+
     @ManyToOne
     @JoinColumn(name = "id_ubicacion", insertable = false, updatable = false)
     private Ubicacion ubicacion;
@@ -25,8 +29,25 @@ public class Personaje {
     public Ubicacion getUbicacion() {
         return ubicacion;
     }
+
     @OneToMany(mappedBy = "personaje")
     private List<EpisodioPersonaje> personajes;
+
+    public int getIdUbicacion() {
+        return idUbicacion;
+    }
+
+    public void setIdUbicacion(int idUbicacion) {
+        this.idUbicacion = idUbicacion;
+    }
+
+    /*public List<EpisodioPersonaje> getPersonajes() {
+        return personajes;
+    }
+
+    public void setPersonajes(List<EpisodioPersonaje> personajes) {
+        this.personajes = personajes;
+    }*/
 
     public void setUbicacion(Ubicacion ubicacion) {
         this.ubicacion = ubicacion;

@@ -22,3 +22,9 @@ INSERT INTO episodios_personajes VALUES (1,1);
 INSERT INTO episodios_personajes VALUES (1,2);
 INSERT INTO episodios_personajes VALUES (2,1);
 INSERT INTO episodios_personajes VALUES (2,2);
+
+-- SE REINICIAN LAS SECUENCIAS SEGÚN LOS DATOS INICIALES
+SELECT setval('public.episodios_id_episodio_seq', 5, true);
+SELECT setval('public.ubicaciones_id_ubicacion_seq', 4, true);
+SELECT setval('public.personajes_id_personaje_seq', 4, true);
+

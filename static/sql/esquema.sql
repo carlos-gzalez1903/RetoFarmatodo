@@ -17,8 +17,7 @@ CREATE TABLE  UBICACIONES (
   "dimension" VARCHAR(45) NOT NULL,
   "tipo" VARCHAR(45) NOT NULL,
   PRIMARY KEY ("id_ubicacion"));	
-	
-	
+
 -- -----------------------------------------------------
 -- Table PERSONAJES
 -- -----------------------------------------------------

@@ -20,13 +20,13 @@ public class Ubicacion {
     @OneToMany(mappedBy = "ubicacion")
     private List<Personaje> personajes;
 
-    public List<Personaje> getPersonajes() {
+    /*public List<Personaje> getPersonajes() {
         return personajes;
     }
 
     public void setPersonajes(List<Personaje> personajes) {
         this.personajes = personajes;
-    }
+    }*/
 
     public Integer getIdUbicaion() {
         return idUbicaion;
