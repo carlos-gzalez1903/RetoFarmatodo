@@ -7,10 +7,10 @@ import java.io.Serializable;
 @Embeddable
 public class EpisodioPersonajesPK implements Serializable {
 
-    @Column
+    @Column(name = "id_episodio")
     private Integer idEpisodio;
 
-    @Column
+    @Column(name = "id_personaje")
     private Integer idPersonaje;
 
     public Integer getIdEpisodio() {

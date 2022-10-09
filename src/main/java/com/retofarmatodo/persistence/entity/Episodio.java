@@ -1,6 +1,7 @@
 package com.retofarmatodo.persistence.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "episodios")
@@ -19,6 +20,17 @@ public class Episodio {
 
     @Column(name = "fecha_estreno")
     private String fechaEstreno;
+
+    @OneToMany(mappedBy = "episodio")
+    private List<EpisodioPersonaje> episodios;
+
+   /* public List<EpisodioPersonaje> getEpisodios() {
+        return episodios;
+    }
+
+    public void setEpisodios(List<EpisodioPersonaje> episodios) {
+        this.episodios = episodios;
+    }*/
 
     public Integer getIdEpisodio() {
         return idEpisodio;

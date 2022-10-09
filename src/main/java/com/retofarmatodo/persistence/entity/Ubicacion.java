@@ -1,6 +1,7 @@
 package com.retofarmatodo.persistence.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "ubicaciones")
@@ -15,6 +16,17 @@ public class Ubicacion {
     private String dimension;
 
     private String tipo;
+
+    @OneToMany(mappedBy = "ubicacion")
+    private List<Personaje> personajes;
+
+    public List<Personaje> getPersonajes() {
+        return personajes;
+    }
+
+    public void setPersonajes(List<Personaje> personajes) {
+        this.personajes = personajes;
+    }
 
     public Integer getIdUbicaion() {
         return idUbicaion;
