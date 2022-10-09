@@ -85,3 +85,11 @@ y espera un parámetro con el número del episodio.
 
     Método: GET
     EJEMPLO: http://localhost:8080/SumNum/20
+
+-Despliege en Heroku
+
+    API y DB se encuentran desplegadas en Heroku los llamados a la api se realizan a:
+    
+    http://reto-farmatodo.herokuapp.com/
+
+    Se sigue la misma estructura de entidades y funciones.
