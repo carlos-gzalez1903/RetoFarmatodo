@@ -1,8 +1,6 @@
 package com.retofarmatodo.service;
 
 import com.retofarmatodo.persistence.entity.Personaje;
-import com.retofarmatodo.persistence.entity.PersonajeClass;
-import com.retofarmatodo.persistence.entity.Ubicacion;
 import com.retofarmatodo.persistence.repository.PersonajeRepository;
 import com.retofarmatodo.persistence.repository.UbicacionRepository;
 import org.springframework.beans.factory.annotation.Autowired;

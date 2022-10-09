@@ -1,8 +1,6 @@
 package com.retofarmatodo.web.controller;
 
 import com.retofarmatodo.persistence.entity.Personaje;
-import com.retofarmatodo.persistence.entity.PersonajeClass;
-import com.retofarmatodo.persistence.entity.Ubicacion;
 import com.retofarmatodo.service.PersonajeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
