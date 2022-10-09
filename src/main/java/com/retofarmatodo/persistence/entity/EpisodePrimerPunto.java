@@ -1,6 +1,6 @@
 package com.retofarmatodo.persistence.entity;
 
-public class Episode {
+public class EpisodePrimerPunto {
 
     private int numEpisode;
     private String name;
